@@ -1,0 +1,9 @@
+package com.interfaces;
+
+public class Test {
+    final int a;
+    int b;
+    void display(){
+
+    }
+}

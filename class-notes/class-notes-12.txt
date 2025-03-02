@@ -1,0 +1,25 @@
+Java Interface API
+------------------
+class
+abstract class
+
+<modifier> interface <InterfaceName> {
+  variables;	//By default declared variable as final static
+  methods;	//By default defined as abstract method
+  //java 8 
+  default method definition;
+  static method definition;
+}
+
+public interface ITest{
+ long eId;	// compilation error
+ void printMessage();
+ String printAge();
+ //java-8
+ default void printData1() {
+  System.out.println("Default method..");
+ }
+ static void printData2() {
+  System.out.println("Static method..");
+ }
+} 

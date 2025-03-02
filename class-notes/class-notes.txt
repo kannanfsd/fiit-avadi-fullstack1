@@ -1,0 +1,51 @@
+Java SE API
+------------
+Method Overloading
+--------------------
+
+class Overload {
+  void display() {
+    System.out.println("It is generice display method");
+  }
+  void display(String myName){
+    System.out.println("My name is "+myName);
+  }
+  void display(String location, String myName) {
+    System.out.println("My name is "+myName+" and I am living in "+location);
+  }
+}
+
+Static Keyword - static
+--------------
+It is applicable for both declared variables and derived methods.
+
+<modifier> data-type variable-name;
+|__public | private | protected | default
+   |__static
+   |__final 
+
+static int x =10;
+
+static public void display() {
+
+}
+
+1. Accessibility with non-static variable & method
+using object reference.
+
+Arithmetic obj = new Arithmetic();
+obj.num1 = 10;
+obj.num2 = 20;
+obj.addition();
+
+2. static variable & method using class name as a reference or member within a class invoke directly.
+
+Arithmetic.num1 = 10;
+Arithmetic.num2 = 20;
+Arithmetic.addition()
+
+
+
+
+
+
